@@ -8,12 +8,14 @@
 				<h2 class="text-center mb-0 mt-1">
 						EXPERT REFERALS
 				</h2>
-				<hr class="dark mb-4">
-                <div class="experts-listing row justify-content-between">
-                    <div class="col-6 col-lg-5 expert-item">
-                        <div class="expert-card">
-                            <figure class="expert-img"></figure>
-                            <figcaption class="expert-details bg-primary px-3 py-4">
+				<hr class="dark mb-3">
+                <div class="expert-listing row justify-content-between">
+                    <div class="col-sm-6  expert-item py-2" v-reveal="{animation:'from-bottom'}">
+                        <div class="expert-card bg-primary ">
+                            <figure class="expert-img">
+                                <img src="@/assets/exp-a.jpg" alt="">
+                            </figure>
+                            <figcaption class="expert-details px-3 py-3 small">
                                 <span class="name">DR FRANCO VERCESI</span>
                                 <span class="role">MD PLASTIC SURGEON</span>
                                 <span class="since">User since 2014</span>
@@ -24,16 +26,82 @@
                             </figcaption>
                         </div>
                     </div>
-                    <div class="col-6 col-lg-5">
-                        <div class="expert-card">
-                            <figure class="expert-img"></figure>
-                            <figcaption class="expert-details bg-primary px-3 py-4">
+                    <div class="col-sm-6  expert-item py-2" v-reveal="{animation:'from-bottom'}">
+                        <div class="expert-card bg-primary">
+                            <figure class="expert-img">
+                                <img src="@/assets/exp-b.jpg" alt="">
+                            </figure>
+                            <figcaption class="expert-details bg-primary px-3 py-3 small">
                                 <span class="name">DR KYUNGKOOK HONG</span>
                                 <span class="role">MD PLASTIC SURGEON</span>
                                 <span class="since">User since 2013</span>
                                 <hr class="my-2 dark">
                                 <blockquote class="quote">
                                     “The patients I treat are all satisfi ed with the results immediately, although they tend to be even more so after 4 months, when the neocollagenesis has started and started taking effect.”
+                                </blockquote>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <div class="col-sm-6  expert-item py-2" v-reveal="{animation:'from-bottom'}">
+                        <div class="expert-card bg-primary">
+                            <figure class="expert-img">
+                                <img src="@/assets/exp-c.jpg" alt="">
+                            </figure>
+                            <figcaption class="expert-details bg-primary px-3 py-3 small">
+                                <span class="name">DR JONGSEO KIM</span>
+                                <span class="role">MD PLASTIC SURGEON</span>
+                                <span class="since">User since 2012</span>
+                                <hr class="my-2 dark">
+                                <blockquote class="quote">
+                                    “My patients most value the effect of the neocoll-genesis, improved skin texture and the long-lasting results.”
+                                </blockquote>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <div class="col-sm-6  expert-item py-2" v-reveal="{animation:'from-bottom'}">
+                        <div class="expert-card bg-primary">
+                            <figure class="expert-img">
+                                <img src="@/assets/exp-d.jpg" alt="">
+                            </figure>
+                            <figcaption class="expert-details bg-primary px-3 py-3 small">
+                                <span class="name">DR PIERRE NICOLAU</span>
+                                <span class="role">MD PLASTIC SURGEON</span>
+                                <span class="since">User since 2009</span>
+                                <hr class="my-2 dark">
+                                <blockquote class="quote">
+                                    “After a treatment with ELLANSÉ, the most common response from my patients is that “it is the fi rst time I have something that lasts.”
+                                </blockquote>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <div class="col-sm-6  expert-item py-2" v-reveal="{animation:'from-bottom'}">
+                        <div class="expert-card bg-primary">
+                            <figure class="expert-img">
+                                <img src="@/assets/exp-e.jpg" alt="">
+                            </figure>
+                            <figcaption class="expert-details bg-primary px-3 py-3 small">
+                                <span class="name">DR FRANCISCO DE MELO</span>
+                                <span class="role">MD PLASTIC SURGEON</span>
+                                <span class="since">User since 2011</span>
+                                <hr class="my-2 dark">
+                                <blockquote class="quote">
+                                    “ELLANSÉ allows us to change the proportion and shape of certain facial features, avoiding the use of more invasive procedures.“ 
+                                </blockquote>
+                            </figcaption>
+                        </div>
+                    </div>
+                    <div class="col-sm-6  expert-item py-2" v-reveal="{animation:'from-bottom'}">
+                        <div class="expert-card bg-primary">
+                            <figure class="expert-img">
+                                <img src="@/assets/exp-f.jpg" alt="">
+                            </figure>
+                            <figcaption class="expert-details bg-primary px-3 py-3 small">
+                                <span class="name">DR SHANG LI LIN</span>
+                                <span class="role">MD PLASTIC SURGEON</span>
+                                <span class="since">User since 2015</span>
+                                <hr class="my-2 dark">
+                                <blockquote class="quote" >
+                                    “ELLANSÉ offers better volumisation compared to other Hyaluronic Acid fi llers on the market. I can correct a variety of signs of ageing with only one product.“ 
                                 </blockquote>
                             </figcaption>
                         </div>

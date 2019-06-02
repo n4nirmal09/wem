@@ -168,10 +168,63 @@ hr{
 }
 
 
-// Swap contents
 
-.swap-container
+
+
+// Expertlistin
+
+.expert-card
 {
-	max-width: 768px;
-	margin: 0 auto;
+	display: flex;
+	flex-flow: row wrap;
+
+	> *{
+		flex: 1;
+		max-width: 50%;
+	}
+
+	.expert-img
+	{
+		margin-bottom: 0;
+		overflow: hidden;
+		> img{
+			display: block;
+			min-width: 100%;
+			min-height: 100%;
+		}
+	}
+
+	.expert-details
+	{
+		> span{
+			display: block;
+			&.name,&.role{
+				font-weight: $font-weight-medium;
+			}
+		}
+	}
+
+	@include media-breakpoint-down(md){
+		display: block;
+		> *{
+			flex: 0 0 100%;
+			max-width: 100%;
+		}
+
+		.expert-img{
+			> img{
+				width: 100%;
+				min-width: 0;
+				max-width: 100%;
+				height: auto;
+				min-height: 0;
+			}
+		}
+	}
+}
+
+.expert-listing{
+	.expert-item{
+		display: flex;
+	}
 }

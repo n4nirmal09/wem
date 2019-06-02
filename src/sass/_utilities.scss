@@ -16,3 +16,10 @@
 	      background: fade-out($theme-color, 0.4);
 	    }
 }
+
+// Shadows
+@each $elevate-point, $elevate in $elevates {
+    .#{$elevate-point}{
+      box-shadow: $elevate;
+    }
+} 

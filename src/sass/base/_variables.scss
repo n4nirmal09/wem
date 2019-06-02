@@ -253,10 +253,5 @@ $hr-margin-y: .8rem;
 $elevate-1: 0 0 2px 2px rgba($black, .075);
 
 $elevates: ( 
-  'elevate-1': 0 0 2px 2px rgba($black, .075)
+  'elevate-1': 0 5px 5px 2px rgba($black, .4)
 );
-
-// Editor styles
-$editor-body-size: 16px;
-$editor-body-line-height: 1.9;
-$editor-heading-line-height: 1.6;
