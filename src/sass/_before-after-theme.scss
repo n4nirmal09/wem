@@ -1,0 +1,38 @@
+.swap-before-after
+{
+	.cocoen-drag
+	{
+		width: 1px;
+		left: 10%;
+		&:before,&:after{
+			content: "";
+			width: 0;
+			height: 0;
+			margin: 0;
+			left: 0;
+			border: none;
+			top: 50%;
+			transform: translateY(-50%);
+			position: absolute;
+		}
+		&:before{
+			right: auto;
+			left: -16px;
+		    border-style: solid;
+		    border-width: 8px 8px 8px 0;
+		    border-color: transparent #fff transparent transparent;
+		}
+		&:after{
+			left: auto;
+			right: -16px;
+		    border-style: solid;
+		    border-width: 8px 0 8px 8px;
+		    border-color: transparent transparent transparent #fff;
+		}
+	}
+
+	> div:first-child
+	{
+		width: 10%;
+	}
+}

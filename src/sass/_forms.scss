@@ -1,0 +1,24 @@
+.form-wrapper{
+	&:after,&:before{
+		content:"";
+		display: table;
+	}
+	max-width: 1110px;
+	margin: 0 auto;
+	&:after{
+		clear: both;
+	}
+	input[type="text"],input[type="email"],select{
+		@extend .form-control;
+	}
+
+	label{
+		
+		color: theme-color('primary');
+	}
+	button[type="submit"]{
+		@extend .btn;
+		@extend .btn-primary;
+		float: right;
+	}
+}

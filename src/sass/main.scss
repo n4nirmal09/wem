@@ -2,11 +2,15 @@
 		"./base/mixins";
 
 /* Vendors */
-@import "./vendors/bootstrap/bootstrap";
-
+@import "./vendors/bootstrap/bootstrap",
+		"./vendors/cocoen";
 /*Theme */
 @import "./typ",
 		"./layout",
 		"./animations",
+		"./buttons",
 		"./banner",
+		"./components",
+		"./forms",
+		"./before-after-theme",
 		"./utilities";

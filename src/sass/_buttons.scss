@@ -1,0 +1,13 @@
+.getintouch-btn 
+{
+	font-size: calculateRem(48px,$font-size-root);
+	&:hover{
+		text-decoration: none;
+	}
+	> span{
+		display: block;
+		text-align: center;
+	}
+
+	padding: 2rem 1rem;
+}

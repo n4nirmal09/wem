@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <home></home>
+    <transition name="fade" mode="out-in">
+        <router-view></router-view>
+     </transition>
   </div>
 </template>
 
 <script>
-  import home from "./views/Home.vue"
+  
 
   export default {
-    components:{
-      home
-    }
+    
   }
 
 </script>

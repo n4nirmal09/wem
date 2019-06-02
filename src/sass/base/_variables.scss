@@ -1,4 +1,4 @@
-$image-path: '../img';
+$image-path: '../assets';
 $font-path: '../fonts';
 
 // Grid breakpoints
@@ -27,8 +27,8 @@ $container-max-widths: (
   sm: 540px,
   md: 720px,
   lg: 960px,
-  xl: (1395px + 30px),
-  xxl: (1395px + 30px),
+  xl: 1000px,
+  xxl: (1200px + 160px),
   xxxl: (1395px + 30px)
 );
  
@@ -42,7 +42,7 @@ $gray-100: #f6f6f6;
 $gray-200: #e2e0de;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
+$gray-500: #a7a6a6 !default;
 $gray-600: #6c757d !default;
 $gray-700: #495057 !default;
 $gray-800: #515659;
@@ -70,6 +70,7 @@ $red:     #ef5253;
 $orange:  #fd7e14 !default;
 $yellow:  #fff100 !default;
 $green:   #6cc0a4;
+$green-dark: #44546a;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
 
@@ -83,16 +84,17 @@ $colors: map-merge((
   "orange":     $orange,
   "yellow":     $yellow,
   "green":      $green,
+  "green-dark": $green-dark,
   "teal":       $teal,
   "cyan":       $cyan,
   "white":      $white,
-  "gray":       $gray-600,
+  "gray":       $gray-500,
   "gray-dark":  $gray-800,
   "gray-darker": $gray-900
 ), $colors);
 
 $primary:       $yellow !default;
-$secondary:     $green;
+$secondary:     $green-dark;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
@@ -105,8 +107,8 @@ $theme-colors: () !default;
 $theme-colors: map-merge((
   "primary":    $primary,
   "secondary":  $secondary,
-  "grey":       $gray-100,
-  "gray-dark":  $gray-500,
+  "grey":       $gray-500,
+  "gray-dark":  $gray-800,
   "gray-darker": $gray-900, 
   "success":    $success,
   "info":       $info,
@@ -138,28 +140,32 @@ $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberati
 $font-family-base:            $font-family-sans-serif !default;
 $font-family-secondary:       $font-family-sans-serif;
 $headings-font-family:        $font-family-sans-serif; 
-$headings-font-weight: 700;
+
 $buttons-font-family: $font-family-secondary; 
 
 // stylelint-enable value-keyword-case
 
-$font-size-root: 			  20px;
+$font-size-root: 			  18px;
 $font-size-root-sm: 14px; 
 $font-size-base:              1rem !default; // Assumes the browser default, typically `16px`
 $font-size-lg:                ($font-size-base * 1.25) !default;
-$font-size-sm:                (17px / $font-size-root) * 1rem; 
+$font-size-sm:                (17px / $font-size-root) * 1rem;
 
+$font-weight-extra-light:     200;
 $font-weight-light:           300;
 $font-weight-normal:          400;
-$font-weight-medium: 		  500;
+$font-weight-medium:          500;
+$font-weight-semi-bold: 		  600;
 $font-weight-bold:            700;
 
-$font-weight-base:            $font-weight-normal;
-$line-height-base:            1.5 !default;
+$font-weight-base:            $font-weight-light;
+$line-height-base:            1.5;
+$headings-line-height:        1.3;
+$headings-font-weight:        $font-weight-light;
 
-$h1-font-size:                (48px / $font-size-root) * 1rem; 
-$h2-font-size:                (45px / $font-size-root) * 1rem; 
-$h3-font-size:                (34px / $font-size-root) * 1rem; 
+$h1-font-size:                (40px / $font-size-root) * 1rem; 
+$h2-font-size:                (38px / $font-size-root) * 1rem; 
+$h3-font-size:                (30px / $font-size-root) * 1rem; 
 $h4-font-size:                (26px / $font-size-root) * 1rem; 
 $h5-font-size:                (24px / $font-size-root) * 1rem; 
 $h6-font-size:                $font-size-base !default;
@@ -183,8 +189,8 @@ $line-height-sm:              1.5 !default;
 $border-width:                1px !default;
 $border-color:                $gray-300 !default;
 
-$border-radius:               (3px / $font-size-root) * 1rem;
-$border-radius-lg:            (3px / $font-size-root) * 1rem;
+$border-radius:               (5px / $font-size-root) * 1rem;
+$border-radius-lg:            (10px / $font-size-root) * 1rem;
 $border-radius-sm:            (3px / $font-size-root) * 1rem;
 
 // Buttons + Forms
@@ -224,7 +230,7 @@ $btn-line-height-lg:          $input-btn-line-height-lg !default;
 
 $btn-border-width:            $input-btn-border-width !default;
 
-$btn-font-weight:             700;
+$btn-font-weight:             $font-weight-light;
 $btn-box-shadow:              inset 0 1px 0 rgba($white, .15), 0 1px 1px rgba($black, .075) !default;
 $btn-disabled-opacity:        .65 !default;
 $btn-active-box-shadow:       inset 0 3px 5px rgba($black, .125) !default;

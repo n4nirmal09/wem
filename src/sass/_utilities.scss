@@ -1,0 +1,18 @@
+.ft-medium
+{
+	font-weight: $font-weight-medium;
+}
+// borders
+@each $theme, $theme-color in $theme-colors {
+	    .border-#{$theme}{
+	      border-width: 1px;
+	      border-style: solid;
+	      border-color: $theme-color; 
+	    }
+}
+// faded bgs
+@each $theme, $theme-color in $theme-colors {
+	    .bg-#{$theme}-faded{
+	      background: fade-out($theme-color, 0.4);
+	    }
+}

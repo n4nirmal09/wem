@@ -1,0 +1,177 @@
+// seperators
+hr{
+	&.mini{
+		max-width: 322px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	@each $theme, $theme-color in $theme-colors {
+	    &.#{$theme}{
+	      border-color: $theme-color
+	    }
+	}
+}
+
+// timetobeme logo
+.timetobeme-logo{
+	>img{
+	display:block;
+	width:100%;
+	}
+}
+
+// Persons
+.person-card
+{
+	.person-img{
+		> img{
+			display: block;
+			width: 100%;
+		}
+		margin-bottom: 5px;
+	}
+	.person-details
+	{
+		text-align: center;
+		font-size: 12px;
+		padding: 5px;
+		text-transform: uppercase;
+		> span{
+			display: block;
+			&.person-name{
+				font-weight: $font-weight-medium;
+			}
+		}
+	}
+}
+// Celebration grid
+.celebration-grid
+{
+	.logo-holder
+	{
+		width: 210px;
+		height: 198px;
+		> svg,>img{
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	> .container
+	{
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		> *{
+			flex: 1;
+		}
+		padding-top:3rem;
+		padding-bottom: 3rem;
+
+		> .logo-holder{
+			max-width: 310px;
+			padding-right: 4rem;
+			& + .text{
+				padding-left: 4rem;
+				border-left: 1px solid $dark;
+			}
+		}
+		> .text{
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+			
+		}
+	}
+	@include media-breakpoint-down(lg){
+		> .container{
+			> .logo-holder{
+				max-width: 210px;
+			}
+		}
+	}
+	@include media-breakpoint-down(xs){
+		> .container{
+			> *{
+				flex: 0 0 100%;
+				max-width: 100%;
+			}
+			> .logo-holder
+			{
+				width: 150px;
+				max-width: 150px;
+				height: 145px;
+				padding-right: 0;
+				margin: 0 auto;
+
+				& + .text{
+					padding-left: 0;
+					border-left: none;
+
+				}
+			}
+			> .text{
+				text-align: center;
+			}
+		}
+	}
+}
+
+// Ell product details
+.ell-product-details-features-list
+{
+	> .ell-product-details-feature
+	{
+		+ .ell-product-details-feature{
+			margin-top: 10px;
+		}
+	}
+}
+
+// Ell product figures
+
+.ele-product-box
+{
+	> .img{
+		> img{
+			display: block;
+			width: 100%
+		}
+	}
+	> .text{
+		font-size: 12px;
+		> span{
+			display: block;
+			text-align: center;
+			&.product-name{
+				font-weight: $font-weight-medium;
+			}
+		}
+	}
+}
+
+.ele-product-box-list
+{
+	display: flex;
+	flex-flow: row wrap;
+	margin: 0 -8px;
+	> *{
+		flex: 1;
+		padding: 0 8px;
+	}
+
+	@include media-breakpoint-down(xs){
+		> *{
+			flex: 0 0 50%;
+			max-width: 50%;
+		}
+	}
+}
+
+
+// Swap contents
+
+.swap-container
+{
+	max-width: 768px;
+	margin: 0 auto;
+}

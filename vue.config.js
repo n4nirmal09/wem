@@ -5,14 +5,16 @@ module.exports = {
   },
 
   publicPath: process.env.NODE_ENV === 'production'
-    ? '/'
+    ? '/wem'
     : '/',
 
   pluginOptions: {
     prerenderSpa: {
       registry: undefined,
       renderRoutes: [
-        '/'
+        '/',
+        '/en/',
+        '/kor/'
       ],
       useRenderEvent: true,
       headless: true,

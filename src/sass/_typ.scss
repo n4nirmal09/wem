@@ -1,0 +1,33 @@
+a{
+	color: $body-color;
+	&:hover{
+		color: lighten($body-color, 10%);
+		
+	}
+}
+html{
+	font-size: $font-size-root;
+}
+@include media-breakpoint-down(lg){
+	html{
+		font-size: $font-size-root-sm;
+	}
+}
+
+@include media-breakpoint-down(xs) {
+	h1,.h1{
+		font-size: calculateRem(24px, $font-size-root-sm)
+	}
+	h2,.h2{
+		font-size: calculateRem(21px, $font-size-root-sm)
+	}
+	h3,.h3{
+		font-size: calculateRem(18px, $font-size-root-sm)
+	}
+	
+
+	.lead
+	{
+		font-size: calculateRem(16px, $font-size-root-sm)
+	}
+}

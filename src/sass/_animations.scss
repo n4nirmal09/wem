@@ -1,0 +1,85 @@
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .3s ease;
+}
+
+.fade-enter,
+.fade-leave-active {
+    opacity: 0
+}
+
+.child-view {
+    position: absolute;
+    transition: all .5s cubic-bezier(.55, 0, .1, 1);
+}
+
+.slide-left-enter,
+.slide-right-leave-active {
+    opacity: 0;
+    -webkit-transform: translate(30px, 0);
+    transform: translate(30px, 0);
+}
+
+.slide-left-leave-active,
+.slide-right-enter {
+    opacity: 0;
+    -webkit-transform: translate(-30px, 0);
+    transform: translate(-30px, 0);
+}
+
+.page-slide {
+    overflow-x: hidden;
+}
+
+.page-right-enter-active,
+.page-right-leave-active,
+.page-left-enter-active,
+.page-left-leave-active {
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.page-right-enter {
+    opacity: 0;
+    transform: translateX(-20%);
+}
+
+.page-right-leave-to {
+    opacity: 0;
+    transform: translateX(20%);
+}
+
+.page-left-enter {
+    opacity: 0;
+    transform: translateX(20%);
+}
+
+.page-left-leave-to {
+    opacity: 0;
+    transform: translateX(-20%);
+}
+
+
+.list-enter-active,
+.list-leave-active {
+    transition: all 0.5s;
+}
+
+.list-enter,
+.list-leave-to
+/* .list-leave-active below version 2.1.8 */
+
+    {
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+// Keyframes
+@keyframes animatedBackground {
+    from {
+        background-position: 0 0
+    }
+
+    to {
+        background-position: 100% 0
+    }
+}

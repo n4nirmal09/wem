@@ -1,18 +1,20 @@
 <template>
   <div class="home">
-    <banner></banner>
     
+    <router-link tag="li" to="/en/">
+	  <a>English</a>
+	</router-link>
+	<router-link tag="li" to="/kor/">
+	  <a>Korean</a>
+	</router-link>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 
-import banner from '@/components/banner/banner.vue'
+//import banner from '@/components/banner/banner.vue'
 export default {
-  name: 'home',
-  components: {
-  	banner
-  }
+  name: 'home'
 }
 </script>
