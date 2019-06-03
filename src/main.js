@@ -11,6 +11,12 @@ import ellanseLogo from "./components/graphics-svg/ellanse-logo.vue"
 Vue.component('ellanse-logo', ellanseLogo)
 import ellanseTen from "./components/graphics-svg/ellanse-ten.vue"
 Vue.component('ellanse-ten-logo', ellanseTen)
+import footer from "./components/block-footer.vue"
+Vue.component('block-footer',footer)
+
+// Mixins
+import globalMixins from "./mixins/global-mixins.js"
+Vue.mixin(globalMixins)
 
 // directives
 import bgImage from './directives/bgimage'

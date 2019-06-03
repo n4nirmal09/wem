@@ -1,5 +1,6 @@
 .getintouch-btn 
 {
+	display: block;
 	font-size: calculateRem(48px,$font-size-root);
 	&:hover{
 		text-decoration: none;
@@ -10,4 +11,16 @@
 	}
 
 	padding: 2rem 1rem;
+}
+
+.btn-grp-wrapper
+{
+	display: flex;
+	flex-flow: row wrap;
+	> .btn{
+		flex: 1;
+		&+ .btn{
+			margin-left: 10px;
+		}
+	}
 }

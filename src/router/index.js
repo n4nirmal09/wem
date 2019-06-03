@@ -11,19 +11,38 @@ export const router = new Router({
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: Home
+      name: 'home-en',
+      component: Home,
+      meta: { lang: 'en' }
     },
     {
-      path: '/en/',
+      path: '/ko/',
+      name: 'home-kor',
+      component: Home,
+      meta: { lang: 'kor' }
+    },
+    {
+      path: '/landing',
       name: 'landing-en',
       component: () => import(/* webpackChunkName: "landing" */ '../views/Landing.vue'),
       meta: { lang: 'en' }
     },
     {
-      path: '/kor/',
+      path: '/ko/landing',
       name: 'landing-kor',
       component: () => import(/* webpackChunkName: "landing" */ '../views/Landing.vue'),
+      meta: { lang: 'kor' }
+    },
+    {
+      path: '/message',
+      name: 'message-en',
+      component: () => import(/* webpackChunkName: "landing" */ '../views/Message.vue'),
+      meta: { lang: 'en' }
+    },
+    {
+      path: '/ko/message',
+      name: 'message-kor',
+      component: () => import(/* webpackChunkName: "landing" */ '../views/Message.vue'),
       meta: { lang: 'kor' }
     }
   ],
@@ -31,7 +50,6 @@ export const router = new Router({
 
 // For language checking
 router.beforeEach((to, from, next) => {
-    
     if (to.matched.some(record => record.meta.lang === 'en')) {
       store.dispatch('changeLang','en')
       next()

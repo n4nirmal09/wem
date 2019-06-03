@@ -13,8 +13,11 @@ module.exports = {
       registry: undefined,
       renderRoutes: [
         '/',
-        '/en/',
-        '/kor/'
+        '/ko/',
+        '/landing',
+        '/ko/landing',
+        '/message',
+        '/ko/message'
       ],
       useRenderEvent: true,
       headless: true,

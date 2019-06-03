@@ -177,7 +177,7 @@ hr{
 {
 	display: flex;
 	flex-flow: row wrap;
-
+	width: 100%;
 	> *{
 		flex: 1;
 		max-width: 50%;

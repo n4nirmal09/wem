@@ -36,6 +36,7 @@
 	</section>
 </template>
 <script>
+	import {Cocoen} from "@/utilities/cocoen.js"
 	export default{
 		data() {
 			return {
