@@ -50,7 +50,7 @@
 						<div class="ele-product-box-list" v-reveal="{animation:'from-bottom-elems-stagger'}">
 							<div class="ele-product-box py-3">
 								<figure class="img">
-									<img src="@/assets/ell-a.png" alt="">
+									<img src="@/assets/ellanse-s-pack.png" alt="">
 								</figure>
 								<figcaption class="rounded border-primary px-2 py-1 bg-secondary text-white text">
 									<span class="product-name">ELLANSÉ - S</span>
@@ -59,7 +59,7 @@
 							</div>
 							<div class="ele-product-box py-3">
 								<figure class="img">
-									<img src="@/assets/ell-b.png" alt="">
+									<img src="@/assets/ellanse-m-pack.png" alt="">
 								</figure>
 								<figcaption class="rounded border-primary px-2 py-1 bg-secondary text-white text">
 									<span class="product-name">ELLANSÉ - M</span>
@@ -68,7 +68,7 @@
 							</div>
 							<div class="ele-product-box py-3">
 								<figure class="img">
-									<img src="@/assets/ell-c.png" alt="">
+									<img src="@/assets/ellanse-l-pack.png" alt="">
 								</figure>
 								<figcaption class="rounded border-primary px-2 py-1 bg-secondary text-white text">
 									<span class="product-name">ELLANSÉ - L</span>
@@ -77,7 +77,7 @@
 							</div>
 							<div class="ele-product-box py-3">
 								<figure class="img">
-									<img src="@/assets/ell-d.png" alt="">
+									<img src="@/assets/ellanse-e-pack.png" alt="">
 								</figure>
 								<figcaption class="rounded border-primary px-2 py-1 bg-secondary text-white text">
 									<span class="product-name">ELLANSÉ - E</span>

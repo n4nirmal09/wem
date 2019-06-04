@@ -6,15 +6,15 @@
 				<hr class="dark mini mt-0 mb-3">
 				<div class="row" v-reveal="{animation:'from-bottom-elems-stagger'}">
 					<div class="col-md-5">
-						<p>In celebration of ELLANSÉ’s 10th anniversary milestone, we reflect on everything we’ve achieved, and look forward to what the future holds. ELLANSÉ is the best-in-class facial collagen treatment. And with more than 1m syringes sold in 2019 across 70 countries, ELLANSÉ will soon become one of the best-selling facial collagen products available worldwide. </p>
+						<p>In celebration of the 10 year anniversary of ELLANSÉ, we reflect on everything we’ve achieved, and look forward to what the future holds. ELLANSÉ is a new class of rejuvenating filler that produces longer-lasting and natural-looking results. And with more than 1 million syringes sold since its launch, ELLANSÉ will soon become one of the best-selling volumising and rejuvenating products available worldwide.</p>
 					</div>
 					<div class="col-md-5">
-						<p>ELLANSÉ has helped re-defi ne how people think about beauty. By developing the collagen stimulation segment of the market, ELLANSÉ has enabled physicians across the world to become experts in natural collagen stimulation and achieve outstanding results for their patients. Results which last longer, and look more natural, than any other product available on the dermal fi ller market. </p>
+						<p>ELLANSÉ has helped re-define how people think about beauty. By developing the <a target="_blank" href="https://ellanse.com/">collagen-stimulation</a> segment of the dermal filler market, ELLANSÉ has enabled physicians across the world to become experts in <a target="_blank" href="https://ellanse.com/physician-landing/">collagen stimulation</a> and achieve outstanding results for their patients. Natural-looking results are immediate, longer-lasting and supported by a superior safety profile.</p>
 					</div>
 					<div class="col-md-2">
 						<div class="person-card">
 							<figure class="person-img">
-								<img src="@/assets/ch-b.png" alt="">
+								<img src="@/assets/ch-b.jpg" alt="">
 							</figure>
 							<figcaption class="person-details bg-dark text-primary">
 								<span class="person-name">Chris spooner</span>

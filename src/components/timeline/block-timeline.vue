@@ -12,7 +12,7 @@
                             <template slot="timeline-year">2006</template>
                             <template slot="timeline-detail-a">
                                 <p>
-                                    <span class="text-grey ft-bold">AQTIS Medical</span> <br> is founded.
+                                    <span class="text-grey ft-bold">AQTIS Medical</span> founded.
                                 </p>
                             </template>
                         </timeline-item>
@@ -35,7 +35,7 @@
                             <template slot="timeline-detail-a">
                                 <p>
                                     <span class="text-grey ft-bold">ELLANSÉ receives QMS ISO 13485 certification, </span> 
-                                    demonstrating AQTIS’ commitment to safety and quality of medical devices.
+                                    demonstrating AQTIS’ commitment to safety and quality.
                                 </p>
                             </template>
                         </timeline-item>
@@ -91,7 +91,7 @@
                             </template>
                             <template slot="timeline-detail-b">
                                 <p class="mt-1">
-                                    <span class="text-grey ft-bold">ELLANSÉ now registered in over 70 countries</span>, including key markets Taiwan, Brazil, South Korea, and Spain.
+                                    <span class="text-grey ft-bold">ELLANSÉ now registered in over 65 countries</span>, including Taiwan, Brazil, South Korea, and Spain.
                                 </p>
                                 <p>
                                     <ul class="list-unstyled flag-list mt-1 mb-2">

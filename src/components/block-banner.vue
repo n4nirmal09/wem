@@ -3,7 +3,7 @@
         <div class="main-banner contain-bg">
             <div class="background">
                 <div class="bg-img preload-background" v-bgimage="require('@/assets/bg-banner.jpg')"></div>
-                <video class="bg-video" autoplay="autoplay" muted="muted" loop="loop">
+                <video class="bg-video" autoplay muted loop>
                     <source src="https://ellanse.com/wp-content/uploads/sites/2/2019/02/Ellanse-Homepage-Video-shortened4.mp4" type="video/mp4">
                 </video>
             </div>

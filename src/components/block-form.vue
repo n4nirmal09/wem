@@ -12,7 +12,7 @@
                 <div class="form-wrapper p-3 px-lg-4 bg-dark-faded">
                     <form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="5B5E7037DA78A748374AD499497E309E383CFE3112FB40699908F8D204C5E594E2A426E7D900253A393347F3AB3A9FE6EAE7B31DB6D2C86EA6E7B13B1BD0EF10" v-reveal="{animation:'from-bottom-elems-stagger'}">
                         <p>
-                            <label for="fieldName">Name</label>
+                            <label for="fieldName">Name [First and surname]</label>
                             <br />
                             <input id="fieldName" name="cm-name" type="text" />
                         </p>
@@ -32,7 +32,7 @@
                             <input id="fielddjdlutui" name="cm-f-djdlutui" type="text" />
                         </p>
                         <p>
-                            <label for="fielddjdlutud">Phone number</label>
+                            <label for="fielddjdlutud">Phone number [including country code]</label>
                             <br />
                             <input id="fielddjdlutud" name="cm-f-djdlutud" type="text" />
                         </p>
@@ -158,7 +158,7 @@
                                 <option value="14288125">Kenya</option>
                                 <option value="14288126">Kiribati</option>
                                 <option value="14288127">Korea North</option>
-                                <option value="14288128">Korea South</option>
+                                <option value="14288128" selected>Korea South</option>
                                 <option value="14288129">Kuwait</option>
                                 <option value="14288118">Kyrgyzstan</option>
                                 <option value="14288119">Laos</option>
@@ -296,7 +296,7 @@
                         <p>
                             <label for="fielddjdlutuk">Message</label>
                             <br />
-                            <input id="fielddjdlutuk" name="cm-f-djdlutuk" type="text" />
+                            <textarea id="fielddjdlutuk" name="cm-f-djdlutuk" type="text" class="message-field" rows="4" />
                         </p>
                         <!-- <div>
                 <input id="cm-privacy-consent" name="cm-privacy-consent" required type="checkbox" />

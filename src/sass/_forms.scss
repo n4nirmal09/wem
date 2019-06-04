@@ -7,7 +7,7 @@
 	&:after{
 		clear: both;
 	}
-	input[type="text"],input[type="email"],select{
+	input[type="text"],input[type="email"],select,textarea{
 		@extend .form-control;
 	}
 
@@ -22,4 +22,6 @@
 		@extend .px-4;
 		float: right;
 	}
+
+	
 }

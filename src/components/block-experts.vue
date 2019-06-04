@@ -39,7 +39,7 @@
                                 <span class="since">Using ELLANSÉ since 2013</span>
                                 <hr class="my-2 dark">
                                 <blockquote class="quote">
-                                    “The patients I treat are all satisfi ed with the results, although they tend to be even more so after 4 months, when the neocollagenesis has started taking effect.”
+                                    “The patients I treat are all satisfied with the results, although they tend to be even more so after 4 months, when the neocollagenesis has started taking effect.”
                                 </blockquote>
                             </figcaption>
                         </div>
