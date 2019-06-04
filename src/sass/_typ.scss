@@ -1,5 +1,6 @@
 a{
 	color: $body-color;
+	font-weight: $font-weight-bold;
 	&:hover{
 		color: lighten($body-color, 10%);
 		

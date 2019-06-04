@@ -16,7 +16,7 @@
                     <router-link tag="span" to="/ko/" class="btn btn-dark"
                      v-html="this.getLang === 'en' ? 'Korean' : '한국어'"></router-link>
                 </div>
-                <p class="mb-0 py-3 text-center">
+                <p class="mb-0 py-3 text-center display-3">
                 	{{ getLang === 'en' ? 'This site is intended for healthcare professionals.' : '이 사이트는 의료 전문가를위한 사이트입니다.'}}
                 </p>
                 <div>
@@ -26,6 +26,20 @@
                     v-html="getLang === 'en' ? 'I am a healthcare professional, <br> Enter Site >' : '저는 의료 전문가입니다.<br> 사이트 입력 >'"
                     ></router-link>
                 </div>
+                <p class="text-center mt-3 display-4" v-if="this.getLang === 'en'">
+                    Please visit the 
+                    <a 
+                    href="https://ellanse.com/" 
+                    target="_blank">consumer site</a> 
+                    for more information if you are not a healthcare professional.
+                </p>
+                <p class="text-center mt-3 display-4" v-else>
+                    방문하십시오
+                    <a 
+                    href="https://ellanse.com/" 
+                    target="_blank">소비자 사이트</a> 
+                    의료 전문가가 아닌 경우 더 많은 정보를 얻으십시오.
+                </p>
             </div>
         </div>
         <block-footer></block-footer>

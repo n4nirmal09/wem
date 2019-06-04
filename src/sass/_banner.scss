@@ -37,6 +37,8 @@
     }
 
     .bg-video {
+        width: 100%;
+        height: auto;
         object-fit: cover;
     }
 }
@@ -151,7 +153,7 @@
 // Welcome banner
 .welcome-banner {
     position: relative;
-	font-size: calculateRem(20px,$font-size-root);
+
     >.container {
         height: calc(100vh - 130px);
         min-height: 450px;
@@ -177,7 +179,7 @@
             width: 100%;
         }
     }
-
+    
     .main-footer {
         >.container {
            

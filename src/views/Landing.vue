@@ -6,8 +6,9 @@
 		<block-timeline></block-timeline>
 		<block-products></block-products>
 		<block-results></block-results>
-		<block-form></block-form>
 		<block-experts></block-experts>
+		<block-form></block-form>
+		<block-references></block-references>
 		<block-footer></block-footer>
 	</div>
 </template>
@@ -21,6 +22,7 @@
 	import blockResults from '@/components/block-results.vue'
 	import blockForm from '@/components/block-form.vue'
 	import blockExperts from '@/components/block-experts.vue'
+	import blockReferences from '@/components/block-references.vue'
 	export default {
 		components:{
 			'block-banner': blockBanner,
@@ -30,7 +32,8 @@
 			'block-products': blockProducts,
 			'block-results': blockResults,
 			'block-form': blockForm,
-			'block-experts': blockExperts
+			'block-experts': blockExperts,
+			'block-references': blockReferences
 		}
 	}
 </script>

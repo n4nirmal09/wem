@@ -24,3 +24,32 @@
 		}
 	}
 }
+
+.btn{
+	&.rounded{
+		border-radius: 99px!important;
+	}
+	&.btn-primary{
+		position: relative;
+		z-index: 1;
+		&:after{
+			border-radius: inherit;
+			position: absolute;
+			content: '';
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+			background: linear-gradient(135deg,rgba(255,255,255,.8) 0,rgba(255,255,255,0) 100%);
+			transition: opacity .3s linear,left 1.5s cubic-bezier(.215,.61,.355,1);
+			opacity: 0;
+		}
+
+		&:hover{
+			&:after{
+				opacity: 1;
+			}
+		}
+	}
+}

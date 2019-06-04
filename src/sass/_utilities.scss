@@ -2,6 +2,10 @@
 {
 	font-weight: $font-weight-medium;
 }
+
+.ft-bold{
+	font-weight: $font-weight-bold;
+}
 // borders
 @each $theme, $theme-color in $theme-colors {
 	    .border-#{$theme}{

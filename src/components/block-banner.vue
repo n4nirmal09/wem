@@ -35,8 +35,7 @@
                     <div class="timetobeme-logo">
                         <img src="@/assets/timetobeme-logo.png" alt="">
                     </div>
-                    <a href="" class="getintouch-btn bg-primary">
-                        <span>Get in touch</span>
+                    <a href="#getintouch-form" class="btn btn-primary rounded px-4" @click="scrollToTop('#getintouch-form',$event)">
                         <span>Find out more</span>
                     </a>
                 </div>

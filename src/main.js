@@ -4,6 +4,9 @@ import {router} from './router'
 import store from './store'
 import './registerServiceWorker'
 
+// utilities
+import './utilities/scrollto.js'
+// styles
 import './sass/main.scss'
 
 // Global Components

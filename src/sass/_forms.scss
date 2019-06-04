@@ -12,12 +12,14 @@
 	}
 
 	label{
-		
+		font-weight: $font-weight-bold;
 		color: theme-color('primary');
 	}
 	button[type="submit"]{
 		@extend .btn;
 		@extend .btn-primary;
+		@extend .rounded;
+		@extend .px-4;
 		float: right;
 	}
 }

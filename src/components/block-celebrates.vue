@@ -1,6 +1,6 @@
 <template>
     <section v-reveal="{animation:'fade-in'}">
-        <div class="celebration-grid contain-bg">
+        <div class="celebration-grid contain-bg" v-reveal="{animation:'celebrate'}">
             <div class="background">
                 <div class="bg-img preload-background" v-bgimage="require('@/assets/bg-b.jpg')"></div>
             </div>

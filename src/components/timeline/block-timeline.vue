@@ -12,7 +12,7 @@
                             <template slot="timeline-year">2006</template>
                             <template slot="timeline-detail-a">
                                 <p>
-                                    <span class="text-grey ft-medium">AQTIS Medical</span> <br> is founded.
+                                    <span class="text-grey ft-bold">AQTIS Medical</span> <br> is founded.
                                 </p>
                             </template>
                         </timeline-item>
@@ -20,24 +20,21 @@
                             <template slot="timeline-year">2007</template>
                             <template slot="timeline-detail-a">
                                 <p>
-                                    <span class="text-grey ft-medium">ELLANSÉ research and development</span>
+                                    <span class="text-grey ft-bold">ELLANSÉ research and development product testing, production, intellectual property,</span> QA/REG set-up, literature search, and pre-clinical testing conducted.
                                 </p>
-                                <p class="small">product testing, production, intellectual property, QA/REG set-up, literature search, and pre-clinical testing conducted.</p>
                             </template>
-                            <template slot="timeline-detail-b">
+                            <!-- <template slot="timeline-detail-b">
                                 <p class="mt-1">
-                                    <span class="text-grey ft-medium">First Silhouette Lift event in Barcelona.</span>
+                                    <span class="text-grey ft-bold">First Silhouette Lift event in Barcelona.</span>
                                 </p>
                                 <p class="small">30 people in attendance.</p>
-                            </template>
+                            </template> -->
                         </timeline-item>
                         <timeline-item>
                             <template slot="timeline-year">2008</template>
                             <template slot="timeline-detail-a">
                                 <p>
-                                    <span class="text-grey ft-medium">ELLANSÉ receives QMS ISO 13485 certification, </span>
-                                </p>
-                                <p class="small">
+                                    <span class="text-grey ft-bold">ELLANSÉ receives QMS ISO 13485 certification, </span> 
                                     demonstrating AQTIS’ commitment to safety and quality of medical devices.
                                 </p>
                             </template>
@@ -46,7 +43,7 @@
                             <template slot="timeline-year">2009</template>
                             <template slot="timeline-detail-a">
                                 <p>
-                                    <span class="text-grey ft-medium">ELLANSÉ launches in Europe.</span>
+                                    <span class="text-grey ft-bold">ELLANSÉ receives CE mark (CE 0344)</span> and launches in <span class="text-grey ft-bold">Europe</span>
                                 </p>
                             </template>
                         </timeline-item>
@@ -54,7 +51,7 @@
                             <template slot="timeline-year">2013</template>
                             <template slot="timeline-detail-a">
                                 <p>
-                                    <span class="text-grey ft-medium">ELLANSÉ launches in Korea.</span>
+                                    ELLANSÉ launches in <span class="text-grey ft-bold"> Korea.</span>
                                 </p>
                             </template>
                         </timeline-item>
@@ -62,15 +59,14 @@
                             <template slot="timeline-year">2014</template>
                             <template slot="timeline-detail-a">
                                 <p>
-                                    <span class="small">Sinclair Pharma acquires AQTIS Medical</span>
-                                    <span class="text-grey ft-medium"> AQTIS Medical.</span>
+                                    Sinclair Pharma acquires <span class="text-grey ft-bold"> AQTIS Medical</span>
                                 </p>
                             </template>
                             <template slot="timeline-detail-b">
                                 <p class="mt-1">
-                                    <span class="text-grey ft-medium">First World Expert Meeting</span>
+                                    <span class="text-grey ft-bold">First World Expert Meeting</span>
                                 </p>
-                                <p class="small">
+                                <p>
                                     (WEM) hosted by Sinclair in Barcelona. 900 people in attendance.
                                 </p>
                             </template>
@@ -79,24 +75,23 @@
                             <template slot="timeline-year">2018</template>
                             <template slot="timeline-detail-a">
                                 <p>
-                                    <span class="small">ELLANSÉ launches in</span> <span class="text-grey ft-medium"> Brazil</span>
+                                    <span>ELLANSÉ launches in</span> <span class="text-grey ft-bold"> Brazil</span>
                                 </p>
                             </template>
                             <template slot="timeline-detail-b">
-                                <p class="mt-1"><span class="text-grey ft-medium">5th WEM event</span> <span class="small"> grows to 1200 attendees.</span>
-                                </p>
+                                <p class="mt-1">5th WEM event grows to 1200 attendees.</p>
                             </template>
                         </timeline-item>
                         <timeline-item data-reversed="true">
                             <template slot="timeline-year">2019</template>
                             <template slot="timeline-detail-a">
                                 <p>
-                                    <span class="text-grey ft-medium">10th anniversary </span><span class="small"> of ELLANSÉ.</span>
+                                    <span class="text-grey ft-bold">10th anniversary </span> of ELLANSÉ.
                                 </p>
                             </template>
                             <template slot="timeline-detail-b">
                                 <p class="mt-1">
-                                    <span class="small">ELLANSÉ now registered in</span> <span class="text-grey ft-medium"> over 70 countries</span>, <span class="small">including key markets Taiwan, Brazil, South Korea, and Spain.</span>
+                                    <span class="text-grey ft-bold">ELLANSÉ now registered in over 70 countries</span>, including key markets Taiwan, Brazil, South Korea, and Spain.
                                 </p>
                                 <p>
                                     <ul class="list-unstyled flag-list mt-1 mb-2">
@@ -107,7 +102,7 @@
                                     </ul>
                                 </p>
                                 <p>
-                                    <span class="ft-medium">More than 1m</span><span class="small"> syringes sold worldwide. </span>
+                                    <span class="text-grey ft-bold">1million syringes sold</span> <br>worldwide since its launch.
                                 </p>
                             </template>
                         </timeline-item>
@@ -115,13 +110,9 @@
                             <template slot="timeline-year">2020+</template>
                             <template slot="timeline-detail-a">
                                 <p>
-                                    <span class="text-grey ft-medium">New Manufacturing site</span>
-                                    <span class="small"> enabling brand expansion.</span>.
+                                    <span class="text-grey ft-bold">ELLANSÉ plans to launch in China, US </span> among other regions, 
+                                    extending its reach to some of the biggest aesthetic markets in the world.
                                 </p>
-                            </template>
-                            <template slot="timeline-detail-b">
-                                <p class="mt-1"><span class="ft-medium">ELLANSÉ plans to launch in China, US</span><br>
-                                    <span class="small"> and more, extending its reach to some of the biggest </span></p>
                             </template>
                         </timeline-item>
                     </div>

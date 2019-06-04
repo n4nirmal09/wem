@@ -30,7 +30,7 @@
 			</h3>
 			<hr class="dark mb-0" v-reveal="{animation:'from-bottom'}">
 			<div class="text-center" v-reveal="{animation:'from-bottom'}">
-				<a href="" class="btn btn-dark text-primary">Discover more patient experiences</a>
+				<a href="https://ellanse.com/" target="_blank" class="btn btn-dark text-primary">Discover more patient experiences</a>
 			</div>
 		</div>
 	</section>

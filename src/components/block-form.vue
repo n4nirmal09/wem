@@ -1,5 +1,5 @@
 <template>
-    <section v-reveal="{animation:'from-bottom'}">
+    <section v-reveal="{animation:'from-bottom'}" id="getintouch-form">
         <div class="contain-bg">
             <div class="background">
                 <div class="bg-img preload-background" v-bgimage="require('@/assets/bg-b.jpg')"></div>

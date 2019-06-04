@@ -45,6 +45,11 @@ export default {
             }
         },
 
+        scrollToTop(scrollDuration, event) {
+            if (event) event.preventDefault()
+            TweenLite.to(window, 1, {scrollTo:scrollDuration, ease:Power2.easeOut})
+        },
+
         debounce(func, wait, immediate) {
             var timeout;
             return function() {

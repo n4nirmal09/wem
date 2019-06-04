@@ -38,7 +38,9 @@ export default {
 
     methods: {
         otherDetailsOffseting() {
-            let otherDetailHeight = this.$el.querySelector('.other-detail').offsetHeight;
+            let otherDetailHeight = 
+            this.$el.querySelector('.other-detail').offsetHeight === 0 ? 50 : this.$el.querySelector('.other-detail').offsetHeight
+
 
             this.$el.style.paddingBottom = otherDetailHeight + 'px'
         }

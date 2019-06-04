@@ -15,7 +15,7 @@
 							<div class="ell-product-details-feature bg-primary p-3 px-md-4 rounded" 
 							v-reveal="{animation:'from-bottom'}">
 								<h6 class="ft-medium mb-1">UNIQUE COMPOSITION</h6>
-								<p class="text-grey mb-2">100% BIODEGRADABLE</p>
+								<p class="text-grey mb-2 small ft-bold">100% BIODEGRADABLE</p>
 								<ul class="pl-2">
 									<li>70% CMC gel carrier</li>
 									<li>30% PCL microspheres</li>
@@ -24,7 +24,7 @@
 							<div class="ell-product-details-feature bg-primary p-3 px-md-4 rounded"
 							v-reveal="{animation:'from-bottom'}">
 								<h6 class="ft-medium mb-1">SPECIFIC PROPERTIES</h6>
-								<p class="text-grey mb-2">OPTIMAL BIOCOMPATIBILITY</p>
+								<p class="text-grey mb-2 small ft-bold">OPTIMAL BIOCOMPATIBILITY</p>
 								<ul class="pl-2">
 									<li>Microspheres size (25-50 m) </li>
 									<li>Microspheres shape: Smooth and spherical</li>
@@ -33,17 +33,7 @@
 							<div class="ell-product-details-feature bg-primary p-3 px-md-4 rounded"
 							v-reveal="{animation:'from-bottom'}">
 								<h6 class="ft-medium mb-1">EXCELLENT SAFETY PROFILE</h6>
-								<p class="text-grey mb-2">SAFE TREATMENT</p>
-								<ul class="pl-2">
-									<li>High safety profile</li>
-									<li>Very low adverse event rate of 0.056% (from its launch in 2009 to December 2018)</li>
-									<li>30M safety data demonstrating a good tolerance</li>
-								</ul>
-							</div>
-							<div class="ell-product-details-feature bg-primary p-3 px-md-4 rounded"
-							v-reveal="{animation:'from-bottom'}">
-								<h6 class="ft-medium mb-1">EXCELLENT SAFETY PROFILE</h6>
-								<p class="text-grey mb-2">SAFE TREATMENT</p>
+								<p class="text-grey mb-2 small ft-bold">SAFE TREATMENT</p>
 								<ul class="pl-2">
 									<li>High safety profile</li>
 									<li>Very low adverse event rate of 0.056% (from its launch in 2009 to December 2018)</li>
@@ -56,7 +46,7 @@
 						<h3 class="mb-0">FOUR OPTIONS</h3>
 						<hr class="primary mb-3">
 
-						<p>There are four ELLANSÉ natural collagen products that offer results lasting between one and four years.</p>
+						<p>There are four ELLANSÉ variants that offer results lasting from at least one to over four years*.</p>
 						<div class="ele-product-box-list" v-reveal="{animation:'from-bottom-elems-stagger'}">
 							<div class="ele-product-box py-3">
 								<figure class="img">

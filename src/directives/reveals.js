@@ -29,6 +29,26 @@ export default {
 				y: 200,
 				ease: revealEase},revealStaggerRatio)
 			break
+			case 'celebrate':
+			tween = new TimelineMax()
+			.staggerFrom(el.querySelectorAll('.logo-holder .path-grp>path'),1,{
+				y: 100,
+				autoAlpha: 0,
+				ease: Power2.easeOut
+			},0.2)
+			.staggerFrom(el.querySelectorAll('.logo-holder .years-grp>path'),0.5,{
+				y: 50,
+				autoAlpha: 0,
+				ease: Power2.easeOut
+			},0.1,0.5)
+			.staggerFrom(el.querySelectorAll('.logo-holder .text-grp>*'),0.5,{
+				scaleX: 0,
+				autoAlpha: 0,
+				ease: Power2.easeOut
+			},0.1)
+			.from(el.querySelector('.text'),1,{autoAlpha: 0},1.8)
+			.timeScale(1.5)
+			break
 			default:
 			tween = null
 			break
