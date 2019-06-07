@@ -16,7 +16,10 @@ import ellanseTen from "./components/graphics-svg/ellanse-ten.vue"
 Vue.component('ellanse-ten-logo', ellanseTen)
 import footer from "./components/block-footer.vue"
 Vue.component('block-footer',footer)
-
+import buttonScrollUp from "./components/button-scrollup.vue"
+Vue.component('button-scrollup',buttonScrollUp)
+import blockReferences from '@/components/block-references.vue'
+Vue.component('block-references', blockReferences)
 // Mixins
 import globalMixins from "./mixins/global-mixins.js"
 Vue.mixin(globalMixins)

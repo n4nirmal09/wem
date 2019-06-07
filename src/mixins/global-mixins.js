@@ -1,14 +1,20 @@
 export default {
     created() {
-        var resize = this.debounce(() => {
+        const resize = this.debounce(() => {
             this.breakpoint.width = window.innerWidth
             this.breakpoint.height = window.innerHeight
-        }, 250);
+        }, 250)
+
+        const scroll = this.debounce(() => {
+            this.scrollTopPos = window.scrollY
+        }, 250)
 
         window.addEventListener('resize', resize)
+        window.addEventListener('scroll', scroll)
     },
     data() {
         return {
+            scrollTopPos: window.scrollY,
             breakpoint: {
                 width: window.innerWidth || 0,
                 height: window.innerHeight || 0
@@ -47,7 +53,7 @@ export default {
 
         scrollToTop(scrollDuration, event) {
             if (event) event.preventDefault()
-            TweenLite.to(window, 1, {scrollTo:scrollDuration, ease:Power2.easeOut})
+            TweenLite.to(window, 1, {scrollTo: {y:scrollDuration, autoKill:false}})
         },
 
         debounce(func, wait, immediate) {

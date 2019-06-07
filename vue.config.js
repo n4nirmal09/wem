@@ -4,8 +4,15 @@ module.exports = {
   	extract: {filename: 'css/main.css'}
   },
 
+  pwa: {
+    iconPaths:{
+      appleTouchIcon: 'img/icons/apple-touch-icon.png',
+      msTileImage: 'img/icons/mstile-150x150.png',
+    }
+  },
+
   publicPath: process.env.NODE_ENV === 'production'
-    ? '/clients/WE/timetobeyou/'
+    ? '/'
     : '/',
 
   pluginOptions: {
@@ -14,10 +21,10 @@ module.exports = {
       renderRoutes: [
         '/',
         '/ko/',
-        '/landing',
-        '/ko/landing',
-        '/message',
-        '/ko/message'
+        '/landing/',
+        '/ko/landing/',
+        '/message/',
+        '/ko/message/'
       ],
       useRenderEvent: true,
       headless: true,

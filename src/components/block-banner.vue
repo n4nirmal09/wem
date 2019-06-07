@@ -3,23 +3,22 @@
         <div class="main-banner contain-bg">
             <div class="background">
                 <div class="bg-img preload-background" v-bgimage="require('@/assets/bg-banner.jpg')"></div>
-                <video class="bg-video" autoplay muted loop>
-                    <source src="https://ellanse.com/wp-content/uploads/sites/2/2019/02/Ellanse-Homepage-Video-shortened4.mp4" type="video/mp4">
-                </video>
+                <transition name="fade">
+                    <video class="bg-video" autoplay loop muted playsinline v-if="showMask">
+                        <source src="@/assets/chenNomusic.mp4" type="video/mp4">
+                    </video>
+                    <iframe v-else class="bg-video" src="https://player.vimeo.com/video/306769390?background=1&autoplay=1&loop=1&byline=0&title=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+                </transition>
             </div>
             <div class="video-controls">
-                <transition 
-                @before-enter="maskBeforeEnter"
-                @enter="maskEnter" 
-                @leave="maskLeave" 
-                :css="false">
+                <transition @before-enter="maskBeforeEnter" @enter="maskEnter" @leave="maskLeave" :css="false">
                     <div class="video-mask" v-if="showMask">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1458 836" preserveAspectRatio="xMaxYMin slice">
                             <path fill="#fff" d="M1469.4.5H0V837h345.5z" />
                         </svg>
                     </div>
                 </transition>
-                <transition name="fade">
+                <!-- <transition name="fade">
                     <div class="play-btn" @click="showMask = false" v-if="showMask">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 302 302">
                             <g fill="#fcee21">
@@ -28,15 +27,21 @@
                             </g>
                         </svg>
                     </div>
-                </transition>
+                </transition> -->
             </div>
             <div class="content">
-                <div class="container align-items-end justify-content-between">
-                    <div class="timetobeme-logo">
+                <div class="container align-items-end"
+                :class="[breakpoint.width < 769 ? 'justify-content-center' : 'justify-content-end']">
+                    <!-- <div class="timetobeme-logo">
                         <img src="@/assets/timetobeme-logo.png" alt="">
-                    </div>
+                    </div> -->
                     <a href="#getintouch-form" class="btn btn-primary rounded px-4" @click="scrollToTop('#getintouch-form',$event)">
-                        <span>Find out more</span>
+                        <span>{{
+                            langSwitcher({
+                            en: "Contact us",
+                            kor: "문의하기"
+                            })
+                            }}</span>
                     </a>
                 </div>
             </div>
@@ -61,8 +66,8 @@ export default {
             .addTo(scrollController)
     },
     methods: {
-        maskBeforeEnter(el){
-            TweenLite.set(el,{
+        maskBeforeEnter(el) {
+            TweenLite.set(el, {
                 scaleX: 0,
                 transformOrigin: "0% 50%"
             })

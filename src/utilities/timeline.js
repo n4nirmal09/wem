@@ -42,7 +42,7 @@ export class EllTimeline {
         	ease: Power0.easeNone
         },0.5)
         .from(item.querySelector('.year-holder>span'), 0.8, { autoAlpha: 0, y: 200, ease: Power2.easeOut },1)
-        .staggerFrom(item.querySelectorAll('.timeline-details p'), 0.8, { autoAlpha: 0, y: 200, ease: Power2.easeOut },0.1,1.2)
+        .staggerFrom(item.querySelectorAll('.timeline-details p,ul'), 0.8, { autoAlpha: 0, y: 200, ease: Power2.easeOut },0.1,1.2)
         
         let scene = new ScrollMagic.Scene({
                 triggerElement: item,
@@ -73,8 +73,8 @@ export class EllTimeline {
     	},0.1)
     	.from(circle.querySelector('path'),0.8,{
     		rotation: -80,
-    		scaleY: 0,
-    		transformOrigin: "100% 100%",
+    		scale: 0,
+    		transformOrigin: "100% 50%",
     		ease: Back.easeOut.config(2)
     	},0.8)
     	return tween

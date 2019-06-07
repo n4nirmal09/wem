@@ -15,7 +15,10 @@ export class Cocoen {
     createElements() {
         // Create drag element
         const span = document.createElement('span');
+        const spanDragArea = document.createElement('span');
+        spanDragArea.className = "drag-area";
         span.className = this.options.dragElementSelector.replace('.', '');
+        span.appendChild(spanDragArea);
         this.element.appendChild(span);
         // Create prompt
         const prompt = document.createElement('div');
@@ -38,7 +41,7 @@ export class Cocoen {
     }
 
     addEventListeners() {
-        this.element.addEventListener('click', this.onTap.bind(this));
+        //this.element.addEventListener('click', this.onTap.bind(this));
         this.element.addEventListener('mousemove', this.onDrag.bind(this));
         this.element.addEventListener('touchmove', this.onDrag.bind(this));
         this.dragElement.addEventListener('mousedown', this.onDragStart.bind(this));

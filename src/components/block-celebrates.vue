@@ -9,7 +9,14 @@
                     <ellanse-ten-logo></ellanse-ten-logo>
                 </div>
                 <div class="text">
-                    <h2 class="h1 mb-0">SINCLAIR CELEBRATES <br>ELLANSE’S 10TH ANNIVERSARY</h2>
+                    <h2 class="h1 mb-0"
+                    v-html="
+                        langSwitcher({
+                                en: 'SINCLAIR CELEBRATES <br>ELLANSÉ’S 10TH ANNIVERSARY',
+                                kor: 'SINCLAIR 에서 보내는 <br> ELLANSÉ 10주년 축하 인사'
+                            })
+                    ">
+                    </h2>
                 </div>
             </div>
         </div>

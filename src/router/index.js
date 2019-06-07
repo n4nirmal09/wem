@@ -22,27 +22,27 @@ export const router = new Router({
       meta: { lang: 'kor' }
     },
     {
-      path: '/landing',
+      path: '/landing/',
       name: 'landing-en',
       component: () => import(/* webpackChunkName: "landing" */ '../views/Landing.vue'),
       meta: { lang: 'en' }
     },
     {
-      path: '/ko/landing',
+      path: '/ko/landing/',
       name: 'landing-kor',
-      component: () => import(/* webpackChunkName: "landing" */ '../views/Landing.vue'),
+      component: () => import(/* webpackChunkName: "landing-kor" */ '../views/Landing.vue'),
       meta: { lang: 'kor' }
     },
     {
-      path: '/message',
+      path: '/message/',
       name: 'message-en',
-      component: () => import(/* webpackChunkName: "landing" */ '../views/Message.vue'),
+      component: () => import(/* webpackChunkName: "message" */ '../views/Message.vue'),
       meta: { lang: 'en' }
     },
     {
-      path: '/ko/message',
+      path: '/ko/message/',
       name: 'message-kor',
-      component: () => import(/* webpackChunkName: "landing" */ '../views/Message.vue'),
+      component: () => import(/* webpackChunkName: "message-kor" */ '../views/Message.vue'),
       meta: { lang: 'kor' }
     }
   ],

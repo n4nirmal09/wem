@@ -1,43 +1,83 @@
 <template>
-    <section v-reveal="{animation:'from-bottom'}" id="getintouch-form">
+    <section v-reveal="{animation:'fade-in'}" id="getintouch-form">
         <div class="contain-bg">
             <div class="background">
                 <div class="bg-img preload-background" v-bgimage="require('@/assets/bg-b.jpg')"></div>
             </div>
             <div class="container py-4">
                 <h2 class="text-center mb-0 mt-1">
-                    GET IN TOUCH
+                    {{
+                    langSwitcher({
+                    en: "GET IN TOUCH",
+                    kor: "터치에 들어가십시오."
+                    })
+                    }}
                 </h2>
                 <hr class="dark mb-4">
                 <div class="form-wrapper p-3 px-lg-4 bg-dark-faded">
                     <form id="subForm" class="js-cm-form" action="https://www.createsend.com/t/subscribeerror?description=" method="post" data-id="5B5E7037DA78A748374AD499497E309E383CFE3112FB40699908F8D204C5E594E2A426E7D900253A393347F3AB3A9FE6EAE7B31DB6D2C86EA6E7B13B1BD0EF10" v-reveal="{animation:'from-bottom-elems-stagger'}">
                         <p>
-                            <label for="fieldName">Name [First and surname]</label>
+                            <label for="fieldName">
+                                {{
+                                langSwitcher({
+                                en: "Name [First and surname]",
+                                kor: "이름(이름 및 성)"
+                                })
+                                }}
+                            </label>
                             <br />
                             <input id="fieldName" name="cm-name" type="text" />
                         </p>
                         <p>
-                            <label for="fieldEmail">Email</label>
+                            <label for="fieldEmail">
+                                {{
+                                langSwitcher({
+                                en: "Email",
+                                kor: "이메일"
+                                })
+                                }}</label>
                             <br />
                             <input id="fieldEmail" name="cm-otjghh-otjghh" type="email" class="js-cm-email-input" required />
                         </p>
                         <p>
-                            <label for="fielddjdlutut">Position</label>
+                            <label for="fielddjdlutut">
+                                {{
+                                langSwitcher({
+                                en: "Specialty",
+                                kor: "전문"
+                                })
+                                }}</label>
                             <br />
                             <input id="fielddjdlutut" name="cm-f-djdlutut" type="text" />
                         </p>
                         <p>
-                            <label for="fielddjdlutui">Company</label>
+                            <label for="fielddjdlutui">{{
+                                langSwitcher({
+                                en: "Clinic name",
+                                kor: "클리닉 이름"
+                                })
+                                }}</label>
                             <br />
                             <input id="fielddjdlutui" name="cm-f-djdlutui" type="text" />
                         </p>
                         <p>
-                            <label for="fielddjdlutud">Phone number [including country code]</label>
+                            <label for="fielddjdlutud">{{
+                                langSwitcher({
+                                en: "Phone number [including country code]",
+                                kor: "전화 번호 [국가 코드 포함]"
+                                })
+                                }}</label>
                             <br />
                             <input id="fielddjdlutud" name="cm-f-djdlutud" type="text" />
                         </p>
                         <p>
-                            <label for="fielddjdlutuh">Country</label>
+                            <label for="fielddjdlutuh">Country
+                                {{
+                                langSwitcher({
+                                en: "Country",
+                                kor: "국가"
+                                })
+                                }}</label>
                             <br />
                             <select id="fielddjdlutuh" name="cm-fo-djdlutuh">
                                 <option value="14287987">Afghanistan</option>
@@ -294,7 +334,12 @@
                             </select>
                         </p>
                         <p>
-                            <label for="fielddjdlutuk">Message</label>
+                            <label for="fielddjdlutuk">{{
+                                langSwitcher({
+                                en: "Message",
+                                kor: "메시지"
+                                })
+                                }}</label>
                             <br />
                             <textarea id="fielddjdlutuk" name="cm-f-djdlutuk" type="text" class="message-field" rows="4" />
                         </p>
@@ -304,7 +349,13 @@
                 <input id="cm-privacy-consent-hidden" name="cm-privacy-consent-hidden" type="hidden" value="true" />
             </div> -->
                         <p>
-                            <button class="js-cm-submit-button" type="submit">Send</button>
+                            <button class="js-cm-submit-button" type="submit">{{
+                                    langSwitcher({
+                                    en: "Send",
+                                    kor: "보내다"
+                                    })
+                                }}
+                            </button>
                         </p>
                     </form>
                 </div>

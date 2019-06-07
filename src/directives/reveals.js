@@ -10,7 +10,7 @@ export default {
 			revealDuration = binding.value.duration || 0,
 			revealStaggerRatio = 0.2,
 			revealReverse = false,
-			revealOffset = 100,
+			revealOffset = 50,
 			tween = null
 		
 		switch(revealValue){
@@ -47,6 +47,12 @@ export default {
 				ease: Power2.easeOut
 			},0.1)
 			.from(el.querySelector('.text'),1,{autoAlpha: 0},1.8)
+			.from(el.querySelector('.icon-grp>path'),1,{
+	    		rotation: -80,
+	    		scale: 0,
+	    		transformOrigin: "50% 100%",
+	    		ease: Back.easeOut.config(2)
+	    	},0.8)
 			.timeScale(1.5)
 			break
 			default:

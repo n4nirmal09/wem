@@ -24,6 +24,13 @@
                         })
                     }}
                 </p>
+                <div class="text-center">
+                    <router-link 
+                    tag="span" :to="this.getLang === 'en' ? '/landing' : '/ko/landing'" 
+                    class="btn btn-primary rounded  px-4"
+                    v-html="getLang === 'en' ? '< Go back' : '< 돌아 가기'"
+                    ></router-link>
+                </div>
             </div>
         </div>
         <block-footer></block-footer>
